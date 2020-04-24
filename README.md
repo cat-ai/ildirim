@@ -67,6 +67,9 @@ public class Tests {
         Function<Integer, List<Integer>> f = x -> List(x -1, x + 2);
         Function<Integer, List<Integer>> g = x -> List(x, - x);
 
+        val listOf1And2 = List(1, 2);
+
+
         System.out.println(List(2).flatMap(Linear.ListDsl::List));
 
         System.out.println(listOf1And2.flatMap(f).flatMap(g));
